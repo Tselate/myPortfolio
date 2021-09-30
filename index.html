@@ -9,53 +9,73 @@
 </head>
 <body>
     <header>
-        <img src="#" alt="Developer Icon">
+        <img class="nav-icon" src="./Images/idea-coding-svgrepo-com.svg" alt="Developer Light Bulb Icon">
 
-        <nav> 
-            <ul class="nav-items"> 
-                <li><a href="#" class="home">Home</a></li>
-                <li><a href="#" class="about-me">About Me</a></li>
-                <li><a href="#" class="services">What I Do</a></li>
-                <li><a href="#" class="portfolio">My Portfolio</a></li>
-                <li><a href="#" class="contact">Contact Me</a></li>
+        <button class="nav-button">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav"> 
+            <ul class="nav-list"> 
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#aboutMe" class="nav-link" >About Me</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">What I Do</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">My Portfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact Me</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="intro-logo">
-            <img src="#" alt="Developer Icon">
-            <h1>front-End Devloper</h1>
-            <h1>Tselate Dawit</h1>
+        <section class="intro" id="home"> 
+
+            <div class="intro-logo">
+                <h3 class="span">front-end</h3>
+                <img class="span-img" src="./Images/coding-svgrepo-com.svg" alt="Main-icon">
+                <h3 class="span"> Developer</h3>
+            </div>
+        
+            <h1 class="intro-name">Tselate Dawit</h1>
         </section>
 
-        <section class="about-me">
+        <section class="about-me" id="aboutMe">
             <p class="about-me_para">
-                Motivated entry-level web developer seeking a front-end developer position. 
+                Motivated entry-level web developer seeking a front-end developer position.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
             </p>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <p class="services-provided">
-                UI based web application. 
-                E-commerce websites 
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
             </p>
             <p class="services-languages">
-                <h6>Icons</h6>
+                <img class="css-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS-Icon">
+                <img class="git-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git-Icon">
+                <img class="js-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS-Icon">
+                <img class="react-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React-Icon">
             </p>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
+            <h3>Projects</h3>
             <ul class="project-list">
-                <li class="project">E-commerce</li>
-                <li class="project">Language Partner</li>
-                <li class="project">Albume Library</li>
+                <li class="project">E-commerce: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                    <a href="#">E-commerce</a>
+                </li>
+
+                <li class="project">Language Partners: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                    <a href="#">Lanuage Partners</a>
+                </li>
+
+                <li class="project">Albume Library: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                    <a href="#">Album Library</a>
+                </li>
             </ul>
         </section>
 
-        <section>
+        <section class="contact" id="contact">
             contact me 
-            <form action="POST"> 
+            <form class="contact-form" action="POST"> 
                 <label>Name:</label>
                 <input type="text" placeholder="Name" required>
                 <label>Email:</label>
@@ -68,8 +88,9 @@
     </main>
 
     <footer>
-        <p class="copyright">C</p>
+        <small>&copy; Copyright 2021</small>
     </footer>
     
+    <script src="index.js"></script>
 </body>
 </html>
