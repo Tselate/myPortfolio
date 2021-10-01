@@ -123,6 +123,8 @@ header {
 
 .nav-open .hamburger {
     transform: rotate(.625turn);
+    position: fixed;
+    right: inherit;
 }
 
 .nav-open .hamburger::before {
