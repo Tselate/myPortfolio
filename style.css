@@ -16,7 +16,12 @@ html {
 
 body {
     background-color: rgb(255, 255, 255);
-    color: black;
+}
+
+.hr-el {
+    width: 30%;
+    margin: 1em auto;
+    border: 1px solid #ec576ba6;
 }
 
 
@@ -144,7 +149,7 @@ header {
 
 .span {
     display: inline-block;
-    text-shadow: 1px 4px 5px #EC576B;
+    text-shadow: 1px 1px 10px #EC576B;
 }
 
 .span-img {
@@ -165,12 +170,6 @@ header {
 .about-me-title {
     text-align: center;
     font-weight: 900;
-}
-
-.hr-el {
-    width: 20%;
-    margin: 1em auto;
-    border: 1px solid #ec576ba6;
 }
 
 .about-me {
@@ -210,9 +209,6 @@ img {
     max-width: 10%;
 }
 
-
-
-
 /* =============
     Projects
 ===============*/
@@ -238,6 +234,7 @@ img {
 
 .project {
     padding-bottom: 1em;
+    max-width: 90%;
 }
 
 .project-link {
@@ -273,7 +270,7 @@ img {
 .contact-form {
     display: flex;
     flex-direction: column;
-    max-width: 30%;
+    max-width: 50%;
     margin: 0 auto;
     font-size: 1.2rem;
     text-shadow: 1px 1px #1D2731;
@@ -301,5 +298,16 @@ button:hover {
 
 footer {
     background-color: white;
-    color: #EC576B;
+    text-align: center;
+    padding: 1.5em ;   
+}
+
+.footer-link {
+    max-width: 7%;
+    transition: transform 350ms ease-in-out;
+}
+
+.footer-link:focus, 
+.footer-link:hover {
+    transform: scale(1.1);
 }
