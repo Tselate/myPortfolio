@@ -19,9 +19,10 @@ body {
 }
 
 .hr-el {
-    width: 30%;
+    width: 20%;
     margin: 1em auto;
     border: 1px solid #ec576ba6;
+    background-color: #ec576ba6;
 }
 
 
@@ -153,7 +154,7 @@ header {
 }
 
 .span-img {
-    max-width: 5%;
+    max-width: 7%;
     padding: 0 0.2em;
 }
 
@@ -176,7 +177,8 @@ header {
     background-color: #1D2731;
     color: white;
     padding: 3em;
-    padding-top: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     text-align:center;
 }
 
@@ -191,7 +193,7 @@ header {
 
 .services {
     text-align: center;
-    padding: 2em 3em 3em;
+    padding: 2em 3em 2em;
 }
 
 .services-title{
@@ -209,6 +211,8 @@ img {
     max-width: 10%;
 }
 
+
+
 /* =============
     Projects
 ===============*/
@@ -218,6 +222,7 @@ img {
     color: white;
     padding: 3em;
     padding-top: 2em;
+    padding-bottom: 2em;
     text-align:center;
 }
 
@@ -234,7 +239,8 @@ img {
 
 .project {
     padding-bottom: 1em;
-    max-width: 90%;
+    max-width: 95%;
+    margin: 0 auto;
 }
 
 .project-link {
@@ -257,7 +263,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    padding: 3em;
+    padding: 2em 3em 2em;
     text-align: center;
 }
 
@@ -299,7 +305,7 @@ button:hover {
 footer {
     background-color: white;
     text-align: center;
-    padding: 1.5em ;   
+    padding: 0.5em ;   
 }
 
 .footer-link {
@@ -310,4 +316,108 @@ footer {
 .footer-link:focus, 
 .footer-link:hover {
     transform: scale(1.1);
+}
+
+/* ================
+    Media queries
+===================*/
+
+@media (min-width: 700px) {
+    .hr-el {
+        width: 12%;
+        background-color: #ec576ba6;
+        margin: 1em auto;
+    }
+
+    .span-img {
+        max-width: 5%;
+    }
+
+    .footer-link {
+        max-width: 6%;
+        transition: transform 350ms ease-in-out;
+    }
+}
+
+
+@media (min-width: 1000px) {
+
+    .hr-el {
+        width: 10%;
+      }
+  
+      .span-img {
+          max-width: 4%;
+      }
+  
+      .about-me-title, .services-title, .projects-title {
+          font-size: 1.7rem;
+      }
+  
+      .about-me-p, .services-p {
+          font-size: 1.1rem;
+          max-width: 90%;
+          margin: 0 auto;
+          margin-bottom: 0.5em;
+      }
+  
+      .contact-form {
+          max-width: 30%;
+          margin: 0 auto;
+          font-size: 1.4rem;
+      }
+
+      footer {
+          padding: 0.8em;
+      }
+  
+      .footer-link {
+          max-width: 5%;
+      }  
+
+}
+
+@media (min-width: 1200px) {
+    .hr-el {
+        width: 7%;
+    }
+
+    .span {
+        font-size: 1.6rem;
+    }
+    .span-img {
+        max-width: 3%;
+        padding: 0 0.2em;
+    }
+
+    .intro-name {
+        margin-bottom: 1.5em;
+    }
+
+    .about-me-title, .services-title, .projects-title {
+        font-size: 1.9rem;
+    }
+
+    .about-me-p, .services-p {
+        font-size: 1.2rem;
+        max-width: 75%;
+    }
+
+    img {
+        max-width: 5%;
+    }
+
+    .services-languages {
+        margin-top: 1.5em;
+    }
+
+    .contact-form {
+        max-width: 20%;
+        margin: 0 auto;
+        font-size: 1.4rem;
+    }
+
+    .footer-link {
+        max-width: 3%;
+    }
 }
