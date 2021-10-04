@@ -96,8 +96,7 @@ header {
 .hamburger::after {
     background: #EC576B;
     width: 2em;
-    height: 3px;
-    border-radius: 1em;
+    height: 3.5px;
     transition: transform 250ms ease-in-out;
 }
 
@@ -189,6 +188,15 @@ header {
     letter-spacing: 1px;
 }
 
+.myPic {
+    object-fit: cover;
+    max-width: 40%;
+    height: 200px;
+    border-radius: 100%;
+    margin-top: 1em;
+    box-shadow: 4px 4px 20px #ec576ba2;
+}
+
 /*============
     Services
 ==============*/
@@ -213,6 +221,18 @@ img {
     max-width: 10%;
 }
 
+a.resume-btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 1.2em;
+    padding: 0.5em 1em;
+}
+
+a.resume-btn:hover, 
+a.resume-btn:focus {
+    cursor: pointer;
+    color: #EC576B;
+}
 
 
 /* =============
@@ -241,19 +261,29 @@ img {
 
 .project {
     padding-bottom: 1em;
+    font-size: 1.1rem;
     max-width: 95%;
     margin: 0 auto;
 }
 
 .project-link {
-    color: white;
+    display: block;
+    color: #e75a6d;
     text-decoration: none;
     font-weight: 700;
 }
 
 .project-link:focus,
 .project-link:hover {
-    color: #EC576B;
+    color: white;
+}
+
+.project-img {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 1em;
+    object-fit: cover;
 }
 
 /* ===========
@@ -305,7 +335,8 @@ button:hover {
 ==============*/
 
 footer {
-    background-color: white;
+    background-color:#1D2731;
+    color: white;
     text-align: center;
     padding: 0.5em ;   
 }
@@ -333,6 +364,10 @@ footer {
 
     .span-img {
         max-width: 5%;
+    }
+
+    .myPic {
+        max-width: 20%;
     }
 
     .footer-link {
