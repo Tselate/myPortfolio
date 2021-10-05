@@ -172,6 +172,7 @@ header {
 .about-me-title {
     text-align: center;
     font-weight: 900;
+    align:center;
 }
 
 .about-me {
@@ -284,6 +285,13 @@ a.resume-btn:focus {
     margin: 0 auto;
     margin-top: 1em;
     object-fit: cover;
+}
+
+@media (max-width: 400px) {
+  .project-list {
+      display: flex;
+      flex-direction: column;
+  }
 }
 
 /* ===========
